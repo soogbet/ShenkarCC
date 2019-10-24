@@ -1,2 +1,2 @@
 # ShenkarCC
-Creative coding at Shenkar College
+Creative coding course at Shenkar College. 
