@@ -1,0 +1,43 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr"><head>
+    <meta charset="utf-8" />
+    <title>P5 sketch</title>
+    <style media="screen">
+      html,body,div,form,fieldset,legend,label{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}th,td{text-align:left;vertical-align:top;}h1,h2,h3,h4,h5,h6,th,td,caption{font-weight:normal;}img{border:0;}
+      canvas{display:block;}
+    </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script></head>
+  <body>
+    <script id="P5Script" type="text/javascript">
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+ // P5 script
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+function setup() {
+  createCanvas( windowWidth, windowHeight);
+}
+
+function draw(){
+  background(0);
+  stroke(255);
+
+  // draw lines from top row the mouse
+  var gap = 20;
+  for(var i = 0; i < width; i+=gap){
+    line(i, 0 , mouseX, mouseY );
+  }
+}
+
+// resize the canvas when the browser window is resized
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+</script><div id="myP5" style="float: right;"></div>
+</body></html>
